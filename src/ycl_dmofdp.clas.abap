@@ -9,10 +9,10 @@ CLASS ycl_dmofdp DEFINITION
 
     DATA :
       gt_filter  TYPE if_rap_query_filter=>tt_name_range_pairs,
-      gtr_bukrs  TYPE RANGE OF zi_zglf001_j-CompanyCode,
-      gtr_belnr  TYPE RANGE OF zi_zglf001_j-JournalEntry,
-      gtr_gjahr  TYPE RANGE OF zi_zglf001_j-FiscalYear,
-      gtr_budat  TYPE RANGE OF zi_zglf001_j-PostingDate,
+      gtr_bukrs  TYPE RANGE OF yi_dmofdp-CompanyCode,
+      gtr_belnr  TYPE RANGE OF yi_dmofdp-JournalEntry,
+      gtr_gjahr  TYPE RANGE OF yi_dmofdp-FiscalYear,
+      gtr_budat  TYPE RANGE OF yi_dmofdp-PostingDate,
       gt_output  TYPE TABLE OF yi_dmofdp WITH EMPTY KEY,
       gt_item    TYPE TABLE OF yi_dmofdp_item WITH EMPTY KEY
       .
