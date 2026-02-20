@@ -11,5 +11,5 @@ authorization master ( instance )
 //  update;
 //  delete;
   field ( readonly ) CompanyCode, JournalEntry, FiscalYear;
-  action PrintJournal result[1] ZI_FILE_ABS;
+  action PrintJournal result[1] YI_DMOFDP_FILE;
 }

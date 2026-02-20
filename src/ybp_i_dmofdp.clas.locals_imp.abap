@@ -29,7 +29,6 @@ CLASS lhc_YI_DMOFDP IMPLEMENTATION.
   METHOD PrintJournal.
    DATA : ls_output TYPE yi_dmofdp.
 
-
     LOOP AT keys ASSIGNING FIELD-SYMBOL(<ls_key>).
 
       TRY.
@@ -74,7 +73,7 @@ CLASS lhc_YI_DMOFDP IMPLEMENTATION.
         "Send Result to FIORI
         APPEND VALUE #(
           %tky   = keys[ 1 ]-%tky
-          %param = VALUE zi_file_abs(
+          %param = VALUE yi_dmofdp_file(
             FileId        = cl_system_uuid=>create_uuid_x16_static( )
             FileName      = |Journal_TEST.pdf|
             FileExtension = 'pdf'
